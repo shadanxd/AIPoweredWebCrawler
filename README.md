@@ -64,7 +64,6 @@ The system operates in two distinct phases:
         ```
         GEMINI_API_KEY='YOUR_ACTUAL_GEMINI_API_KEY'
         ```
-    *   **Important:** Replace `YOUR_ACTUAL_GEMINI_API_KEY` with your real key. Do not commit the `.env` file to version control (it's included in the `.gitignore`).
 
 ## Usage
 
