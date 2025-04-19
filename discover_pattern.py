@@ -8,6 +8,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from browser_use import Agent
 import logging
 import io
+import os
+
 
 # --- Logging Setup ---
 # Capture logs into a string buffer
@@ -65,7 +67,6 @@ async def discover_and_save_pattern(start_url: str):
             return
 
         # --- Configure LLM (Gemini) ---
-        import os
         gemini_api_key = os.getenv("GEMINI_API_KEY")
         if not gemini_api_key:
             print("Error: GEMINI_API_KEY not found in environment variables. Check .env file.")

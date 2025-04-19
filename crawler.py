@@ -1,8 +1,6 @@
 import asyncio
 from playwright.async_api import async_playwright, Page, BrowserContext
 from urllib.parse import urlparse, urljoin
-import ssl
-import certifi
 import aiofiles
 import json
 import logging
